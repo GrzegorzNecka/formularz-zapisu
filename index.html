@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>formularz rejestracji</title>
+</head>
+
+<body>
+
+    <form action="https://formspree.io/strzypior@gmail.com" method="POST">
+
+        <input type="text" name="fname" placeholder="Imię" required>
+        <input type="text" name="sname" placeholder="Nazwisko" required>
+        <input type="email" name="_replyto" placeholder="Email" required>
+
+        <label for="ticket">Wybierz rodzaj biletu:</label>
+        <select name="ticket" id="ticket">
+          <option value="normaly">Normalny</option>
+          <option value="premium">Premium</option>
+          <option value="VIP">VIP</option>
+          </select>
+
+        <p>Menu wegańśkie:</p>
+        <label>  <input type="radio" name="vegan-menu" value="tak">Tak</label>
+        <label> <input type="radio" name="vegan-menu" value="nie" checked>Nie</label>
+
+        <label for="message">Dodatkowe uwagi: </label>
+        <textarea name="" id="message"></textarea>
+        
+        <label>
+        <input type="checkbox" name="agreement" required>Wyrażam zgodę na coś tam </label>
+        
+        <input type="submit" value="Zapisz się">
+    
+    </form>
+
+
+
+</body>
+
+</html>
